@@ -9,7 +9,7 @@ class DetailProductPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final fields = productEntry.fields; 
-    final imageUrl = 'http://localhost:8000/main/proxy-image/?url=${Uri.encodeComponent(fields.thumbnail)}';
+    final imageUrl = 'http://localhost:8000/proxy-image/?url=${Uri.encodeComponent(fields.thumbnail)}';
 
     return Scaffold(
       appBar: AppBar(

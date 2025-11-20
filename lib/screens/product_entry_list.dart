@@ -17,10 +17,10 @@ class _ProductListPageState extends State<ProductListPage> {
   bool filterByMe = false;
 
   Future<List<ProductEntry>> fetchProduct(CookieRequest request) async {
-    String url = 'http://localhost:8000/main/json/';
+    String url = 'http://localhost:8000/json/';
 
     if (filterByMe) {
-      url = 'http://localhost:8000/main/json/?filter=my';
+      url = 'http://localhost:8000/json/?filter=my';
     }
 
     final response = await request.get(url);

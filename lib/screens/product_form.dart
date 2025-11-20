@@ -232,7 +232,7 @@ onPressed: () async {
         _formKey.currentState!.save();
         
         final response = await request.postJson(
-          "http://localhost:8000/main/create-flutter/", 
+          "http://localhost:8000/create-flutter/", 
           jsonEncode({
             "name": _name,
             "price": _price,

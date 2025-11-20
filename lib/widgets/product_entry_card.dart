@@ -16,7 +16,7 @@ class ProductEntryCard extends StatelessWidget {
     final fields = productEntry.fields;
 
     final imageUrl =
-        'http://localhost:8000/main/proxy-image/?url=${Uri.encodeComponent(fields.thumbnail)}';
+        'http://localhost:8000/proxy-image/?url=${Uri.encodeComponent(fields.thumbnail)}';
 
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
